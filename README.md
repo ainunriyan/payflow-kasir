@@ -145,38 +145,29 @@ Coba semua fitur tanpa batasan selama 30 hari!
 
 ## 🛒 Cara Pembelian
 
-### 1. **Online (Recommended)**
-- Kunjungi: [payflow.id/buy](https://payflow.id/buy)
-- Pilih metode pembayaran
-- Dapatkan license key via email
+### 📱 **WhatsApp (Recommended)**
+Hubungi langsung untuk pembelian dan konsultasi:
 
-### 2. **Transfer Bank**
-- **BCA**: 1234567890 a.n. PayFlow Indonesia
-- **Mandiri**: 1234567890 a.n. PayFlow Indonesia
-- **BRI**: 1234567890 a.n. PayFlow Indonesia
-- Kirim bukti transfer ke: sales@payflow.id
+**📱 WhatsApp: +62 812-4972-5276**
 
-### 3. **E-Wallet**
-- **GoPay**: 081234567890
-- **OVO**: 081234567890
-- **DANA**: 081234567890
+*Proses pembelian:*
+1. Chat WhatsApp untuk konsultasi
+2. Transfer sesuai instruksi
+3. Dapatkan license key langsung
+4. Aktivasi dan mulai menggunakan
 
 ## 📞 Support & Bantuan
 
-### 🎯 **Premium Support** (Pembeli License)
-- **WhatsApp**: +62 812-3456-7890
-- **Email**: support@payflow.id
-- **Live Chat**: payflow.id/chat
-- **Response Time**: < 2 jam (Senin-Jumat)
+### 🎯 **Customer Support**
+- **WhatsApp**: +62 812-4972-5276
+- **Email**: ainunriyanf123@gmail.com
+- **Response Time**: < 4 jam (Senin-Sabtu)
 
-### 📚 **Knowledge Base**
-- **User Manual**: [docs.payflow.id](https://docs.payflow.id)
-- **Video Tutorial**: [youtube.com/payflow](https://youtube.com/payflow)
-- **FAQ**: [payflow.id/faq](https://payflow.id/faq)
-
-### 🤝 **Community**
-- **Telegram Group**: [t.me/payflow_users](https://t.me/payflow_users)
-- **Facebook Group**: [fb.com/groups/payflow](https://fb.com/groups/payflow)
+### 🎁 **Yang Anda Dapatkan:**
+- Setup & training via video call
+- Panduan lengkap penggunaan
+- Support teknis seumur hidup
+- Update aplikasi gratis
 
 ## 🔧 Development
 
