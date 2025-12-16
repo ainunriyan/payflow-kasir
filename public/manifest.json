@@ -1,0 +1,62 @@
+{
+  "short_name": "PayFlow",
+  "name": "PayFlow - Aplikasi Kasir UMKM",
+  "description": "Aplikasi kasir terlengkap untuk UMKM dengan fitur modern dan user-friendly",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#5568D9",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "finance"],
+  "lang": "id",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "screenshots/dashboard.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "label": "Dashboard Utama PayFlow"
+    },
+    {
+      "src": "screenshots/kasir.png", 
+      "type": "image/png",
+      "sizes": "1280x720",
+      "label": "Sistem Kasir"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kasir",
+      "short_name": "Kasir",
+      "description": "Buka sistem kasir",
+      "url": "/?tab=kasir",
+      "icons": [{ "src": "icons/kasir.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Laporan",
+      "short_name": "Laporan", 
+      "description": "Lihat laporan penjualan",
+      "url": "/?tab=laporan",
+      "icons": [{ "src": "icons/laporan.png", "sizes": "96x96" }]
+    }
+  ]
+}

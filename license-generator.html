@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayFlow License Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { background: #f5f5f5; padding: 20px; border-radius: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { background: white; padding: 15px; margin-top: 20px; border-radius: 5px; border-left: 4px solid #28a745; }
+        .key-display { font-family: monospace; font-size: 18px; background: #f8f9fa; padding: 10px; border-radius: 3px; }
+        .copy-btn { background: #28a745; margin-left: 10px; padding: 5px 10px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔑 PayFlow License Generator</h1>
+        <p>Tool untuk generate license key unik untuk customer</p>
+        
+        <div class="form-group">
+            <label>Nama Customer:</label>
+            <input type="text" id="customerName" placeholder="Nama Lengkap Customer">
+        </div>
+        
+        <div class="form-group">
+            <label>Email Customer:</label>
+            <input type="email" id="customerEmail" placeholder="email@customer.com">
+        </div>
+        
+        <div class="form-group">
+            <label>Nomor WhatsApp:</label>
+            <input type="text" id="customerPhone" placeholder="08123456789">
+        </div>
+        
+        <div class="form-group">
+            <label>Jenis Bisnis:</label>
+            <select id="businessType">
+                <option value="cafe">Cafe/Restoran</option>
+                <option value="retail">Toko Retail</option>
+                <option value="grocery">Toko Kelontong</option>
+                <option value="fashion">Fashion/Clothing</option>
+                <option value="pharmacy">Apotek</option>
+                <option value="other">Lainnya</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Metode Pembayaran:</label>
+            <select id="paymentMethod">
+                <option value="transfer">Transfer Bank</option>
+                <option value="ewallet">E-Wallet</option>
+                <option value="cash">Cash/Tunai</option>
+            </select>
+        </div>
+        
+        <button onclick="generateLicense()">🔑 Generate License Key</button>
+        
+        <div id="result" class="result" style="display: none;">
+            <h3>✅ License Key Berhasil Dibuat</h3>
+            <div class="form-group">
+                <label>License Key:</label>
+                <div class="key-display" id="licenseKey"></div>
+                <button class="copy-btn" onclick="copyKey()">📋 Copy</button>
+            </div>
+            
+            <div class="form-group">
+                <label>Template WhatsApp:</label>
+                <textarea id="whatsappTemplate" rows="8" readonly></textarea>
+                <button class="copy-btn" onclick="copyWhatsApp()">📋 Copy Template</button>
+            </div>
+            
+            <div class="form-group">
+                <label>Data Customer (Simpan untuk record):</label>
+                <textarea id="customerRecord" rows="4" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateUniqueKey() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            
+            function randomSegment() {
+                let result = '';
+                for (let i = 0; i < 4; i++) {
+                    result += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                return result;
+            }
+            
+            return `PF-${randomSegment()}-${randomSegment()}-${randomSegment()}-${randomSegment()}`;
+        }
+
+        function generateLicense() {
+            const customerName = document.getElementById('customerName').value;
+            const customerEmail = document.getElementById('customerEmail').value;
+            const customerPhone = document.getElementById('customerPhone').value;
+            const businessType = document.getElementById('businessType').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+
+            if (!customerName || !customerEmail || !customerPhone) {
+                alert('Mohon isi semua field yang diperlukan!');
+                return;
+            }
+
+            const licenseKey = generateUniqueKey();
+            const currentDate = new Date().toLocaleDateString('id-ID');
+            
+            document.getElementById('licenseKey').textContent = licenseKey;
+            
+            const whatsappTemplate = `🎉 *SELAMAT!* License PayFlow Anda sudah aktif!
+
+👤 *Customer:* ${customerName}
+📧 *Email:* ${customerEmail}
+📱 *WhatsApp:* ${customerPhone}
+
+🔑 *LICENSE KEY:*
+\`${licenseKey}\`
+
+📋 *CARA AKTIVASI:*
+1. Buka aplikasi PayFlow
+2. Klik "Aktivasi Lisensi" 
+3. Masukkan license key di atas
+4. Klik "Aktivasi"
+
+✅ *FITUR YANG DIDAPAT:*
+• Unlimited produk & transaksi
+• Multi-user (Admin + Kasir)
+• Customer management & loyalty
+• Laporan analytics lengkap
+• Thermal printer support
+• Auto backup & sync
+• Free updates selamanya
+
+🎁 *BONUS:*
+• Setup & training GRATIS via video call
+• Template struk profesional
+• Database produk sample
+• 1 tahun support premium
+
+💰 *HARGA:* Rp 150.000 (sekali bayar, seumur hidup)
+
+📞 *BUTUH BANTUAN?*
+WhatsApp: +62 812-4972-5276
+Email: support@payflow.id
+
+Terima kasih telah mempercayai PayFlow! 🚀
+
+*PayFlow - Aplikasi Kasir UMKM Terlengkap*`;
+
+            document.getElementById('whatsappTemplate').value = whatsappTemplate;
+            
+            const customerRecord = `${currentDate} | ${customerName} | ${customerEmail} | ${customerPhone} | ${businessType} | ${paymentMethod} | ${licenseKey}`;
+            document.getElementById('customerRecord').value = customerRecord;
+            
+            document.getElementById('result').style.display = 'block';
+            
+            // Save to local storage for backup
+            const records = JSON.parse(localStorage.getItem('payflowLicenses') || '[]');
+            records.push({
+                date: currentDate,
+                name: customerName,
+                email: customerEmail,
+                phone: customerPhone,
+                business: businessType,
+                payment: paymentMethod,
+                licenseKey: licenseKey,
+                timestamp: Date.now()
+            });
+            localStorage.setItem('payflowLicenses', JSON.stringify(records));
+        }
+
+        function copyKey() {
+            const keyText = document.getElementById('licenseKey').textContent;
+            navigator.clipboard.writeText(keyText).then(() => {
+                alert('License key berhasil dicopy!');
+            });
+        }
+
+        function copyWhatsApp() {
+            const template = document.getElementById('whatsappTemplate').value;
+            navigator.clipboard.writeText(template).then(() => {
+                alert('Template WhatsApp berhasil dicopy!');
+            });
+        }
+
+        window.onload = function() {
+            const records = JSON.parse(localStorage.getItem('payflowLicenses') || '[]');
+            console.log(`Total licenses generated: ${records.length}`);
+        }
+    </script>
+</body>
+</html>

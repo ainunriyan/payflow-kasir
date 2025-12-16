@@ -1,0 +1,113 @@
+PayFlow Kasir - Commercial License Agreement
+
+Copyright (c) 2024 PayFlow Indonesia. All rights reserved.
+
+IMPORTANT: READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THE SOFTWARE.
+
+This License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and PayFlow Indonesia ("Licensor") for the PayFlow Kasir software product ("Software"), which includes computer software and may include associated media, printed materials, and "online" or electronic documentation.
+
+BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1. GRANT OF LICENSE
+
+Subject to the terms and conditions of this Agreement, Licensor grants you a non-exclusive, non-transferable license to:
+
+a) Install and use the Software on a single computer or device
+b) Make one backup copy of the Software for archival purposes
+c) Use the Software for commercial purposes within your business operations
+
+2. RESTRICTIONS
+
+You may NOT:
+
+a) Copy, distribute, or transfer the Software except as expressly permitted
+b) Reverse engineer, decompile, or disassemble the Software
+c) Rent, lease, or lend the Software to third parties
+d) Remove or alter any copyright notices or proprietary legends
+e) Use the Software to develop competing products
+f) Share your license key with unauthorized users
+
+3. TRIAL VERSION
+
+The trial version of the Software is provided for evaluation purposes only and is limited to 30 days of use. After the trial period expires, you must purchase a full license to continue using the Software.
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. Licensor retains all right, title, and interest in and to the Software, including all intellectual property rights.
+
+5. SUPPORT AND UPDATES
+
+a) Licensed users receive 1 year of technical support
+b) Software updates are provided free of charge for the lifetime of the license
+c) Support is provided via email, phone, and online documentation
+d) Response time for support requests is within 24-48 hours during business days
+
+6. WARRANTY DISCLAIMER
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+7. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8. TERMINATION
+
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any term of this Agreement. Upon termination, you must destroy all copies of the Software.
+
+9. REFUND POLICY
+
+a) 30-day money-back guarantee for full license purchases
+b) Refunds are processed within 7-14 business days
+c) Trial versions are not eligible for refunds
+d) Refund requests must be submitted with valid reason
+
+10. PRIVACY AND DATA COLLECTION
+
+a) The Software may collect anonymous usage statistics to improve the product
+b) No personal or business data is transmitted without your explicit consent
+c) All data remains on your local system unless you choose cloud backup
+d) Privacy policy available at: https://payflow.id/privacy
+
+11. COMPLIANCE
+
+You agree to comply with all applicable laws and regulations in your use of the Software, including but not limited to tax reporting requirements and data protection laws.
+
+12. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the Republic of Indonesia. Any disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the courts of Jakarta, Indonesia.
+
+13. ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between you and Licensor regarding the Software and supersedes all prior agreements, understandings, and communications.
+
+14. CONTACT INFORMATION
+
+For questions about this license or the Software, contact:
+
+PayFlow Indonesia
+Email: legal@payflow.id
+Phone: +62 21-1234-5678
+Address: Jakarta, Indonesia
+Website: https://payflow.id
+
+15. ACKNOWLEDGMENT
+
+BY USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
+
+---
+
+THIRD-PARTY LICENSES
+
+This software includes third-party components with their own licenses:
+
+- React: MIT License
+- Tailwind CSS: MIT License
+- Lucide React: ISC License
+- Chart.js: MIT License
+- Other dependencies: See package.json for details
+
+---
+
+© 2024 PayFlow Indonesia. All rights reserved.
+
+PayFlow® is a registered trademark of PayFlow Indonesia.
